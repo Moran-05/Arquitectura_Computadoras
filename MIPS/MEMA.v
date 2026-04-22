@@ -10,7 +10,7 @@ module MEMA (
         if (WE) begin
             mem[DIR] <= DATA_IN;
         end
-        if (RE) begin
+        else if (RE) begin
             DATA_OUT <= mem[DIR];
         end
     end
