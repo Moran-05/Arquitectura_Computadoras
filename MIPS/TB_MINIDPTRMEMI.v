@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 module tb_alu_mem;
 reg [31:0]ADRESS;
-reg [31:0]SelAlu;
+reg [3:0]SelAlu;
 reg regWrite;
 wire [31:0]InstTR;
 

@@ -10,8 +10,8 @@ module BR (
     
     reg [31:0]mem[0:31];
     initial begin
-        mem[0] = 8'd10; mem[1] = 8'd20;
-        mem[2] = 8'd30; mem[3] = 8'd40;
+        mem[0] = 32'd10; mem[1] = 32'd100;
+        mem[2] = 32'd30; mem[3] = 32'd40;
         //$readmemb("Banco.txt", mem);
     end
     always @* begin
