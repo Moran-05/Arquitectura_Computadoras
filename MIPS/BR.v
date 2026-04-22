@@ -10,15 +10,15 @@ module BR (
     
     reg [31:0]mem[0:31];
     initial begin
-        /*mem[0] = 8'd10; mem[1] = 8'd20;
-        mem[2] = 8'd30; mem[3] = 8'd40; */
-        $readmemb("Banco.txt", mem);
+        mem[0] = 8'd10; mem[1] = 8'd20;
+        mem[2] = 8'd30; mem[3] = 8'd40;
+        //$readmemb("Banco.txt", mem);
     end
     always @* begin
         DR1 = mem[AR1];
         DR2 = mem[AR2];
         if (RegEn) begin
-            mem[AW] = DW; 
+            mem[AW] = DW;
         end
     end
 
