@@ -8,11 +8,11 @@ module Mux2a1 (
 
 //3. cuerpo del modulo, instancias: NA, assigns: NA, Bloque secuencial: SI
 
-always @(UCctl) // Cualquier asignacion dentro de un bloque secuencial
+always @(*) // Cualquier asignacion dentro de un bloque secuencial
 	begin
 		case(UCctl)
-			3'd0: R = alu;
-			3'd1: R = mem;
+			1'd0: R <= alu;
+			1'd1: R <= mem;
 		endcase
 	end
 

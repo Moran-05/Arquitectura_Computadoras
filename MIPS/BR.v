@@ -10,9 +10,17 @@ module BR (
     
     reg [31:0]mem[0:31];
     initial begin
-        mem[0] = 32'd10; mem[1] = 32'd100;
-        mem[2] = 32'd30; mem[3] = 32'd40;
-        //$readmemb("Banco.txt", mem);
+        mem[0] = 32'd10;
+        mem[1] = 32'd11;
+        mem[2] = 32'd12;
+        mem[3] = 32'd13;
+        mem[4] = 32'd14;
+        mem[5] = 32'd15;
+        mem[6] = 32'd16;
+        mem[7] = 32'd17;
+        mem[8] = 32'd18;
+        mem[9] = 32'd19;
+        mem[10] = 32'd20;
     end
     always @* begin
         DR1 = mem[AR1];
