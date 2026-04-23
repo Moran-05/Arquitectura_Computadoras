@@ -5,7 +5,7 @@ module ALUMIPS (
 	output reg[31:0] R
 );
 
-always @(Sel) begin
+always @(*) begin
 	case (Sel)
 		4'b0000: R = A & B;
 		4'b0001: R = A | B;
