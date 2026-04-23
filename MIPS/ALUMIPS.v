@@ -11,7 +11,7 @@ always @(Sel) begin
 		4'b0001: R = A | B;
 		4'b0010: R = A + B;
 		4'b0110: R = A - B;
-		4'b0111: RSlt = (A < B) ? 1:0;
+		4'b0111: R = (A < B) ? 1:0;
 		4'b1100: R = ~(A | B);
 	endcase
 end
