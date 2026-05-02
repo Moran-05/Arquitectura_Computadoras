@@ -3,6 +3,6 @@ module SignExtend (
     output reg[31:0]DataOut
 );
     always @(*) begin
-        DataOut = {16{Inst[15]}, Inst};
+        DataOut = {{16{Inst[15]}}, Inst};
     end
 endmodule

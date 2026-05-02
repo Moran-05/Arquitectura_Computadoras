@@ -19,7 +19,7 @@ module UNITCTRL (
                 MemWrite = 1'b0;
                 AluOp = 3'b010;
             end
-            6'b1000011: begin
+            6'b100011: begin
                 RegDst = 1'b0;
                 AluSrc = 1'b1;
                 MemToReg = 1'b1;

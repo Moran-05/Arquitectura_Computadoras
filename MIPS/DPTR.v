@@ -24,7 +24,7 @@ module DPTR (
     Mux2a1 mux(.mem(C5), .alu(C3), .UCctl(CMTR), .R(C6));
     UNITCTRL uc(.Op(InstTR[31:26]), .RegDst(CRD), .AluSrc(CAS), .MemToReg(CMTR), .Regwrite(CRW), .MemRead(CMR), .MemWrite(CMW), .AluOp(CA));
     ALUCTRL aluctrl(.AluOp(CA), .func(InstTR[5:0]), .SelAlu(C4));
-    Mux2a1 muxBR(.mem(InstTR[15:11]), .alu(InstTR[20:16]), .UCctl(CRD), .R(C7));
+    Mux2a1_5b muxBR(.mem(InstTR[15:11]), .alu(InstTR[20:16]), .UCctl(CRD), .R(C7));
     Mux2a1 muxalu(.mem(C9), .alu(C1), .UCctl(CAS), .R(C8));
     SignExtend SignExt(.Inst(InstTR[15:0]), .DataOut(C9));
 
