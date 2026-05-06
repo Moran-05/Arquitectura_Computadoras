@@ -4,11 +4,7 @@ module Mux2a1 (
 	output reg[31:0] R
 );
 
-//2. declaracion de wires: NA, regs: SI
-
-//3. cuerpo del modulo, instancias: NA, assigns: NA, Bloque secuencial: SI
-
-always @(*) // Cualquier asignacion dentro de un bloque secuencial
+always @(*)
 	begin
 		case(UCctl)
 			1'd0: R <= alu;
