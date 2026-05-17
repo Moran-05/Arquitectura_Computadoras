@@ -1,2 +1,5 @@
 *.v.bak
 .DS_Store
+*.f
+*.vcd
+TB_DPTR

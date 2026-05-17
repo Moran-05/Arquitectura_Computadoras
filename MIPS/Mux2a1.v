@@ -1,5 +1,5 @@
 module Mux2a1 (
-	input [31:0] mem, alu,
+	input [31:0] A, B,
     input UCctl,
 	output reg[31:0] R
 );
@@ -7,8 +7,8 @@ module Mux2a1 (
 always @(*)
 	begin
 		case(UCctl)
-			1'd0: R <= alu;
-			1'd1: R <= mem;
+			1'd0: R = B;
+			1'd1: R = A;
 		endcase
 	end
 

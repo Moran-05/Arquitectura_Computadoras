@@ -7,7 +7,7 @@ module BR (
     output reg[31:0]DR1,
     output reg[31:0]DR2
 );
-    
+
     reg [31:0]mem[0:31];
     initial begin
         mem[0] = 32'd10;
@@ -31,4 +31,12 @@ module BR (
         end
     end
 
+task dump_mem;
+    integer i;
+    begin
+        $display("=== Banco de Registros ===");
+        for (i = 0; i < 30; i = i + 1)
+            $display("  R[%0d] = %0d", i, $signed(mem[i]));
+    end
+endtask
 endmodule

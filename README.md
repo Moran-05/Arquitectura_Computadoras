@@ -14,7 +14,7 @@ El directorio `MIPS/` contiene los módulos del procesador desarrollados hasta e
 - `ALUMIPS.v` / `ALUCTRL.v` — Unidad Aritmético-Lógica y su control.
 - `BR.v` — Banco de Registros.
 - `MEMI.v` / `MEMA.v` — Memoria de instrucciones y memoria de datos.
-- `PC.v` / `ADD.v` — Contador de programa y sumador.
+- `PC.v` / `ADDER.v` — Contador de programa y sumador.
 - `UNITCTRL.v` — Unidad de Control.
 - `Mux2a1.v` / `Mux2a1_5b.v` — Multiplexores.
 - `Sign-extend.v` — Extensor de signo.
