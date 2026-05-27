@@ -23,7 +23,7 @@ module UNITCTRL (
                 Jump = 1'b0;
                 AluOp = 3'b010;
             end
-            6'b100011: begin // Tipo LW: RS + offset se guarda en RT en BR. OP RS RT #. LW RT RS Offset.
+            6'b100011: begin // Tipo LW: RS + offset se guarda en RT en BR. OP RS RT #. LW RT RS Offset. base_pointer
                 RegDst = 1'b0;
                 AluSrc = 1'b1;
                 MemToReg = 1'b1;
